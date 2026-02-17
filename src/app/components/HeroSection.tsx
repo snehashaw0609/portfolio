@@ -125,7 +125,7 @@ export default function HeroSection() {
                 <motion.div
                     initial={{ opacity: 0, scale: 0.5 }}
                     animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+                    transition={{ duration: 1, ease: "easeOut" }}
                 >
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
@@ -146,7 +146,7 @@ export default function HeroSection() {
                 <motion.h1
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.5, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+                    transition={{ delay: 0.5, duration: 0.8, ease: "easeOut" }}
                     className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight"
                 >
                     <span className="text-gray-100">Hi, I&apos;m </span>

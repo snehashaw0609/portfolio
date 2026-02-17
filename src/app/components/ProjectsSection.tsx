@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { HiExternalLink, HiCode } from "react-icons/hi";
 
 const projects = [
@@ -36,7 +36,7 @@ const projects = [
     },
 ];
 
-const containerVariants = {
+const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
         opacity: 1,
@@ -44,13 +44,13 @@ const containerVariants = {
     },
 };
 
-const cardVariants = {
+const cardVariants: Variants = {
     hidden: { opacity: 0, y: 60, rotateX: 10 },
     visible: {
         opacity: 1,
         y: 0,
         rotateX: 0,
-        transition: { duration: 0.7, ease: "easeOut" as const },
+        transition: { duration: 0.7, ease: "easeOut" },
     },
 };
 
