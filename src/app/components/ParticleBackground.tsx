@@ -84,7 +84,7 @@ export default function ParticleBackground() {
 
                 // Pulsing glow
                 p.pulse += p.pulseSpeed;
-                const glowSize = p.size + Math.sin(p.pulse) * 1.5;
+                const glowSize = Math.max(0.1, p.size + Math.sin(p.pulse) * 1.5);
                 const glowOpacity = p.opacity + Math.sin(p.pulse) * 0.15;
 
                 // Glow effect (outer)
